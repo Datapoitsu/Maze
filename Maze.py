@@ -60,7 +60,7 @@ def move(dir:int):   #0 = right, 1 up, 2 left, 3 down
         case _:
             print("Incorrect direction")
 
-def look(dir:int):   #0 = right, 1 up, 2 left, 3 down
+def look(dir:int) -> int: #dir 0 = right, 1 up, 2 left, 3 down; Output 0 = empty, 1 = wall, 2 = goal
     global currentPos
     match dir:
         case 0:
